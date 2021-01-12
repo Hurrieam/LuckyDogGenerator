@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>幸运儿生成器</title>
+</head>
+
+<body style="background-color: black; color: white; text-align: center;">
+    <h1>幸运儿生成器</h1>
+    <h2>Copyright 快速的飓风. 2020</h2>
+
+    <h3>输入序号范围</h3>
+    <div> 下限<input type="text" id="rangeMin" onchange="range_change()"> 上限<input type="text" id="rangeMax"
+            onchange="range_change()"> </div>
+    <h4>（若想按人数抽号，请将下限设置为1，上限设置为人数）</h4>
+    <button id="Btn_accept" onclick="Accept_click()">确认</button>
+
+    <h4>（每次改变上下限后需点此确认再单击“Go! ”抽号）</h4>
+    <button style="height: 50px; width: 100px;" id="Btn_GenerateNew" onclick="GenerateNew_click()">Go! </button>
+
+    <br><br>
+    <textarea style="height: 150px; width: 300px;" id="Result_Area"></textarea>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
